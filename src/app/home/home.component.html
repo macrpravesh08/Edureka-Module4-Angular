@@ -1,0 +1,47 @@
+<div>
+
+    <nav class="navbar navbar-inverse">
+  
+      <div class="container-fluid">
+  
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/book"> Books </a></li>
+        </ul>
+  
+        <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/login" ><span class="glyphicon glyphicon-log-out"></span> Log-off</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            {{pageTitle}}
+        </div>
+        <div class="panel-body"  >
+            <div class="row" >
+                <img src="./assets/logo.png" 
+                    class="img-responsive center-block"
+                    style="max-height:300px;padding-bottom:50px"/>
+            </div>
+            <div class="row"  >
+                <div class="text-center">Today Date: {{today | date: 'dd/MM/yy'}}</div>
+                <br>
+
+                <div class="text-center">Developed by:</div>
+                <h3 class="text-center">Ram Pravesh</h3>
+
+                <div class="text-center">@rampraveshdeveloper</div>
+                <div class="text-center">
+                    <a href="http://www.google.com">www.google.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        @Copyright
+    </footer>
+</div>
